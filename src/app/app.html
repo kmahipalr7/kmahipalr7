@@ -1,0 +1,29 @@
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand">zomato</div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/services" routerLinkActive="active">Services</a>
+      <a routerLink="/restaurants" routerLinkActive="active">Restaurants</a>
+      <a routerLink="/offers" routerLinkActive="active">Offers</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="login-btn" routerLink="/login">Login</button>
+      <button class="signup-btn" routerLink="/signup">Sign Up</button>
+      <button class="cta-btn" routerLink="/menu">Order Now</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+
+

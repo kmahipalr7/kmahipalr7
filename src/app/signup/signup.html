@@ -1,0 +1,37 @@
+<section class="auth-page">
+	<div class="auth-card">
+		<p class="auth-label">Join zomato</p>
+		<h1>Create your account</h1>
+		<p class="auth-intro">Save your favorite restaurants and order faster next time.</p>
+
+		<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate>
+			<label for="name">Full name</label>
+			<input id="name" type="text" placeholder="Alex Johnson" formControlName="fullName" [class.invalid]="fullName.touched && fullName.invalid" />
+			<small class="error" *ngIf="fullName.touched && fullName.hasError('required')">Full name is required.</small>
+			<small class="error" *ngIf="fullName.touched && fullName.hasError('minlength')">Enter at least 2 characters.</small>
+
+			<label for="signup-email">Email address</label>
+			<input id="signup-email" type="email" placeholder="alex@example.com" formControlName="email" [class.invalid]="email.touched && email.invalid" />
+			<small class="error" *ngIf="email.touched && email.hasError('required')">Email address is required.</small>
+			<small class="error" *ngIf="email.touched && email.hasError('email')">Enter a valid email address.</small>
+
+			<label for="signup-password">Password</label>
+			<input id="signup-password" type="password" placeholder="Create a password" formControlName="password" [class.invalid]="password.touched && password.invalid" />
+			<small class="error" *ngIf="password.touched && password.hasError('required')">Password is required.</small>
+			<small class="error" *ngIf="password.touched && password.hasError('minlength')">Use at least 8 characters.</small>
+			<small class="error" *ngIf="password.touched && password.hasError('pattern')">Include at least one uppercase letter and one number.</small>
+
+			<label for="confirm-password">Confirm password</label>
+			<input id="confirm-password" type="password" placeholder="Repeat your password" formControlName="confirmPassword" [class.invalid]="confirmPassword.touched && (confirmPassword.invalid || signupForm.hasError('passwordsDoNotMatch'))" />
+			<small class="error" *ngIf="confirmPassword.touched && confirmPassword.hasError('required')">Please confirm your password.</small>
+			<small class="error" *ngIf="confirmPassword.touched && signupForm.hasError('passwordsDoNotMatch')">Passwords do not match.</small>
+
+			<button type="submit" [disabled]="signupForm.invalid">Create account</button>
+		</form>
+
+		<p class="success-message" *ngIf="submitted">Account created successfully.</p>
+		<p class="error form-error" *ngIf="registrationError">An account with this email already exists.</p>
+
+		<p class="auth-footer">Already have an account? <a routerLink="/login">Login</a></p>
+	</div>
+</section>

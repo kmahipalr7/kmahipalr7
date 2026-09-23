@@ -1,0 +1,14 @@
+[
+  {
+    "fullName": "Alex Johnson",
+    "email": "alex@example.com",
+    "passwordHash": "19513fdc9da4fb72a4a05eb66917548d3c90ff94d5419e1f2363eea89dfee1dd",
+    "createdAt": "2026-09-23T00:00:00.000Z"
+  },
+  {
+    "fullName": "Demo Customer",
+    "email": "demo.user.639257711802992592@example.com",
+    "passwordHash": "07b2ec23ebecd12e9a6a1cbfec51f74ad4cdf9f42ac21d88eac9adc3795f41a6",
+    "createdAt": "2026-09-23T09:09:40.308Z"
+  }
+]
