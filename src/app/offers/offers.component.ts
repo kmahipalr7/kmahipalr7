@@ -37,6 +37,7 @@ import { Component } from '@angular/core';
 })
 export class OffersComponent {
   offers = [
+    { tag: 'FIRST ORDER', title: '60% OFF for New Users', text: 'First-time customers get 60% off their first order up to ₹300. Use code WELCOME60.', },
     { tag: 'NEW', title: 'Free Delivery', text: 'Get complimentary delivery on orders above ₹499.', },
     { tag: 'HOT', title: '50% OFF', text: 'Enjoy a 50% discount on your favorite combo meals.', },
     { tag: 'LIMITED', title: 'Weekend Special', text: 'Save big on pizza, burgers, and biryani this weekend.', },
