@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 })
 export class OffersComponent {
   offers = [
-    { tag: 'NEW', title: 'Free Delivery', text: 'Get complimentary delivery on orders above $25.', },
+    { tag: 'NEW', title: 'Free Delivery', text: 'Get complimentary delivery on orders above ₹499.', },
     { tag: 'HOT', title: '50% OFF', text: 'Enjoy a 50% discount on your favorite combo meals.', },
     { tag: 'LIMITED', title: 'Weekend Special', text: 'Save big on pizza, burgers, and biryani this weekend.', },
   ];

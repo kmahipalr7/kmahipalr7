@@ -40,12 +40,12 @@ export class HomeComponent {
   ];
 
   menuItems = [
-    { name: 'Margherita Pizza', price: '$14.99', tag: 'Popular', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Butter Chicken', price: '$18.50', tag: 'Chef Pick', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Veg Burger', price: '$11.20', tag: 'Healthy', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Paneer Wrap', price: '$9.80', tag: 'Fresh', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Masala Dosa', price: '$8.50', tag: 'South Indian', image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Idli Sambar', price: '$7.25', tag: 'South Indian', image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Margherita Pizza', price: '₹449', tag: 'Popular', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Butter Chicken', price: '₹549', tag: 'Chef Pick', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Veg Burger', price: '₹299', tag: 'Healthy', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Paneer Wrap', price: '₹249', tag: 'Fresh', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Masala Dosa', price: '₹189', tag: 'South Indian', image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Idli Sambar', price: '₹149', tag: 'South Indian', image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80' },
   ];
 
   currentSlide = 0;
